@@ -20,4 +20,6 @@ You will need to add the following regular expressions for discovery to work as 
 
 You will also want to populate the database username and password in the template macros after import. It is wise to use a user other than root, which has the adequate permissions required to read the mysql statistics. 
 
+You may also change the external script in use to the versions with the mixed case names which have MySQL instead of mysql to hard code the username and password in the script instead of using the template macros.
+
 This template uses the mysql client on the zabbix server to connect to the remote database servers to pull the stats, so it doesn't require the zabbix agent on the remote database servers.
